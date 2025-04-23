@@ -40,3 +40,40 @@ public class arthematicexeption {
         }
     }
 }
+
+
+
+
+//question3
+
+public class University {
+    String UniversityName="Amrita";
+
+public class Department{
+    String DepartmentName="CSE";
+    int DepartmentCode=10000;
+    public void Departmentinfo(){
+        System.out.println("name of the deppartment:"+DepartmentName);
+        System.out.println("Code of the department:"+DepartmentCode);
+    }
+}
+public class Student {
+    String Studentname="mohith";
+    int rollnumber=24308;
+    public void Studentinfo(){
+        System.out.println("name of the Student:"+Studentname);
+        System.out.println("Roll number of the student:"+rollnumber);
+    }
+}
+}
+class Gang{
+    public static void main (String[] args){
+        University uni=new University();
+       System.out.println("name of the uiversity is "+uni.UniversityName);
+       University.Department dept=uni.new Department();
+       dept.Departmentinfo();
+       University.Student Stu=uni.new Student();
+       Stu.Studentinfo();
+
+}
+}
