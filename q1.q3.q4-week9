@@ -1,3 +1,8 @@
+
+
+
+1.write a java programme to create a method that take integers vas a perameter and throws an exeption when even number is given
+
 public class evennumberexception{
     public static void CheckNumber(int number) throws Exception{
         if(number%2==0){
@@ -18,7 +23,23 @@ public class evennumberexception{
         }
     }
 
-//question 2 
+errors:
+the main class was created twice.
+the exeption class was not created.
+missid the else statement 
+wrong exeption was considerd in the catch block 
+
+important points :
+learning to create the class for the exection 
+learing to identify the exeptions 
+handeling the exeptions 
+creating the try and catch blocks 
+creating the measages for the exeptions
+
+
+
+//question 3
+3.write a java programme to hamndle the arthematic Exeption using the try and catch and finally 
 
 public class arthematicexeption {
     public static void division(int numerator, int denominator) throws Exception{
@@ -38,7 +59,7 @@ public class arthematicexeption {
         {
             System.out.println("exeption caught"+e.getMessage());
         }
-    }
+    }  /// finally should be added rememberrrrrrrrrrrrrrrrrrrrrr 
 }
 
 
