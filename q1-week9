@@ -1,0 +1,21 @@
+public class evennumberexception{
+    public static void CheckNumber(int number) throws Exception{
+        if(number%2==0){
+            throw new Exception("even number is not allowed "+number);
+        }
+        else{
+            System.out.println("the number is allowed since it is odd "+number);
+        }
+    }
+    public static void main(String[] args){
+        try{
+            CheckNumber(8);
+        }
+        catch(Exception e){
+        System.out.println("execption caught "+e.getMessage());
+        } 
+
+        }
+    }
+
+
